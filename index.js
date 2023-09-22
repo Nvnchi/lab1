@@ -12,7 +12,7 @@ const SpeechRecognitionEvent =
   window.SpeechRecognitionEvent || window.webkitSpeechRecognitionEvent;
 
 // Define music genres for voice recognition
-const genres = ["cringe", "k-pop", "lofi", "metal", "rap", "rock"];
+const genres = ["cringe", "k-pop", "lofi", "metal", "rap", "rock", "mainstream"];
 
 // Set up grammar for recognizing genres
 const grammar = `#JSGF V1.0; grammar genres; public <genre> = ${genres.join(
