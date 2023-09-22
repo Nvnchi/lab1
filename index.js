@@ -28,8 +28,12 @@ recognition.continuous = true;
 recognition.lang = "nl-NL";
 recognition.interimResults = false;
 
-// Display a message to inform the user
-const message = document.querySelector("#message");
+// Add an event listener to the "Enter" button
+document.getElementById('enterButton').addEventListener('click', function() {
+  // Hide the overlay when the button is clicked
+  document.getElementById('overlay').style.display = 'none';
+});
+
 
 document.querySelector("#loading").style.display = "none";
 
@@ -48,7 +52,5 @@ recognition.onresult = function (event) {
     // Unmute and play the audio when recognized
     audio.muted = false;
     audio.play();
-    // Hide the message
-    message.style.display = "none";
   }
 };
