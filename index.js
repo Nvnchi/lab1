@@ -24,7 +24,7 @@ let currentSongIndex = -1;
 // Function to play a random song within the selected genre
 function playRandomSong() {
   if (currentGenre !== null) {
-    const audioFolderPath = `music/${currentGenre}/`;
+    const audioFolderPath = `https://raw.githubusercontent.com/Nvnchi/lab1/main/music/${currentGenre}/`;
     const songs = [
       "song0.mp3",
       "song1.mp3",
@@ -38,7 +38,7 @@ function playRandomSong() {
 
     // Ensure the next song is not the same as the current one
     currentSongIndex = (randomIndex === currentSongIndex) ? (randomIndex + 1) % songs.length : randomIndex;
-  
+
     // Set the audio source to the selected song and play it
     audioPlayer.src = audioFolderPath + songs[currentSongIndex];
     audioPlayer.muted = false;
@@ -87,5 +87,5 @@ recognition.onresult = function (event) {
 
     // Play a random song within the selected genre
     playRandomSong();
-  } 
+  }
 };
