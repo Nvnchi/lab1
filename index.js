@@ -8,8 +8,6 @@ const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
 const SpeechGrammarList =
   window.SpeechGrammarList || window.webkitSpeechGrammarList;
-const SpeechRecognitionEvent =
-  window.SpeechRecognitionEvent || window.webkitSpeechRecognitionEvent;
 
 // Define music genres for voice recognition
 const genres = ["vlaams", "k-pop", "lofi", "metal", "rap", "rock", "mainstream"];
