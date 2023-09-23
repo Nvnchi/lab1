@@ -10,7 +10,7 @@ const SpeechGrammarList =
   window.SpeechGrammarList || window.webkitSpeechGrammarList;
 
 // Define music genres for voice recognition
-const genres = ["vlaams", "k-pop", "lofi", "metal", "rap", "rock", "mainstream"];
+const genres = ["nederlands", "k-pop", "lofi", "metal", "rap", "rock", "mainstream"];
 
 // Set up grammar for recognizing genres
 const grammar = `#JSGF V1.0; grammar genres; public <genre> = ${genres.join(
